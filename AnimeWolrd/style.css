@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0f0f1b;
+    color: #ffffff;
+    line-height: 1.6;
+  }
+  
+  header {
+    background: url('Images/background.jpg') no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    filter: brightness(1.5);
+  }
+  
+  header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  header h1 {
+    font-size: 4rem;
+    z-index: 1;
+  }
+  
+  nav {
+    background-color: #1b1b2f;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  nav a {
+    color: #ffffff;
+    margin: 0 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ff3c70;
+  }
+  
+  .section {
+    padding: 4rem 2rem;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  .section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ff3c70;
+  }
+  
+  .characters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .character {
+    background: #1e1e2e;
+    padding: 1rem;
+    border-radius: 12px;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .character img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+  }
+  
+  .character:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 60, 112, 0.4);
+  }
+  
+  footer {
+    background-color: #1b1b2f;
+    color: #888;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+  }
+  :root {
+    --primary-color: #ff4e5b;
+    --secondary-color: #2d2d2d;
+    --accent-color: #ffe2e2;
+    --text-color: #ffffff;
+    --bg-color: #121212;
+  }
+  .character {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  
+  .character:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+  }
+  
